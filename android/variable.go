@@ -132,6 +132,10 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Device_support_wait_for_qsee struct {
+			Cflags []string
+		}
+
 		Has_legacy_camera_hal1 struct {
 			Cflags []string
 		}
@@ -224,6 +228,7 @@ type productVariables struct {
 	Device_support_hwfde       *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_support_legacy_hwfde  *bool `json:",omitempty"`
+	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 
 	IntegerOverflowExcludePaths *[]string `json:",omitempty"`
 
