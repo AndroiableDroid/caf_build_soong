@@ -128,6 +128,10 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
+		Device_support_legacy_hwfde struct {
+			Cflags []string
+		}
+
 		Has_legacy_camera_hal1 struct {
 			Cflags []string
 		}
@@ -219,6 +223,7 @@ type productVariables struct {
 	MinimizeJavaDebugInfo      *bool `json:",omitempty"`
 	Device_support_hwfde       *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
+	Device_support_legacy_hwfde  *bool `json:",omitempty"`
 
 	IntegerOverflowExcludePaths *[]string `json:",omitempty"`
 
